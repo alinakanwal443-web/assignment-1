@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text Styler</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Interactive Text Styler</h1>
+
+    <div class="controls">
+      <button id="colorBtn">Change Color</button>
+      <button id="increaseBtn">A+ Increase Size</button>
+      <button id="decreaseBtn">A− Decrease Size</button>
+
+      <select id="fontSelect" aria-label="Choose font">
+        <option value="Arial">Arial</option>
+        <option value="Georgia">Georgia</option>
+        <option value="Courier New">Courier New</option>
+      </select>
+
+      <button id="underlineBtn">Underline</button>
+      <button id="overlineBtn">Overline</button>
+      <button id="strikeBtn">Line Through</button>
+      <button id="boldBtn">Bold</button>
+      <button id="italicBtn">Italic</button>
+
+      <button id="leftBtn">Align Left</button>
+      <button id="centerBtn">Align Center</button>
+      <button id="rightBtn">Align Right</button>
+
+      <button id="upperBtn">UPPERCASE</button>
+      <button id="lowerBtn">lowercase</button>
+
+      <label class="color-label">
+        Text area color
+        <input id="backgroundColor" type="color" value="#fff7e8">
+      </label>
+
+      <button id="modeBtn">Toggle Dark / Light Mode</button>
+      <button id="resetBtn">Reset</button>
+    </div>
+
+    <section id="textArea">
+      <p id="sampleText" contenteditable="true">
+        Click here to edit this text, then use the buttons to change its appearance.
+      </p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
